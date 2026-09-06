@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1e293b;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #334155;
+  margin-bottom: 25px;
+}
+
+.count,
+.random-number {
+  font-size: 50px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 20px 0;
+  min-height: 60px;
+}
+
+.message {
+  color: #dc2626;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.increment {
+  background: #16a34a;
+}
+
+.decrement {
+  background: #dc2626;
+}
+
+.reset {
+  background: #64748b;
+}
+
+.generate {
+  background: #7c3aed;
+  margin-top: 15px;
+}
+
+button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
+
